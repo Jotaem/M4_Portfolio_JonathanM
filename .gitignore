@@ -1,0 +1,23 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
+*.orig
+*.rej
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivo de perfil de usuario local
+link_repositorio.tct
