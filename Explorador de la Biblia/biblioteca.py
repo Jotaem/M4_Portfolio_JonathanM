@@ -55,7 +55,7 @@ class Biblioteca:
             print("\nLibros escritos:")
             for libro in autor.libros:
                 print(f"  - {libro.nombre}: \"{libro.cita_clave}\"")
-            print("-" * (20 + len(autor.nombre)))
+            print("✧" * (20 + len(autor.nombre)))
         else:
             print("❌ Autor no encontrado.")
             
