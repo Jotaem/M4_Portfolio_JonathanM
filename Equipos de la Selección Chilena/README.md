@@ -1,25 +1,26 @@
-# Proyecto: Estadísticas de la Selección Chilena en Eliminatorias
-Este es un sencillo programa que permiteconsultar información histórica sobre las últimas 10 participaciones de la selección chilena de fútbol en las eliminatorias para la Copa del Mundo
+# Proyecto: Estadísticas de la Selección Chilena (Versión con POO) ⚽
+Este es un programa de consola que permite consultar información histórica sobre las últimas 10 participaciones de la selección chilena de fútbol en las eliminatorias para la Copa del Mundo.
+Esta versión ha sido **refactorizada** para utilizar **Programación Orientada a Objetos (POO)**, haciendo el código más modular, escalable y fácil de mantener. Además, incluye una nueva funcionalidad para **exportar datos a archivos de texto**.
 
-## Requisitos del Proyecto
-- Uso de variables, operadores y estructuras de datos (diccionarios).
-- Implementación de sentencias condicionales (`if`, `elif`, `else`).
-- Uso de bucles (`while`, `for`).
-- Modularización del código con funciones.
+## Conceptos Avanzados Aplicados 🚀
 
-## Funcionalidades
-El programa ofrece un menú interactivo con las siguientes opciones:
-1.  **Listar equipo por eliminatoria:** Muestra un equipo titular representativo para una eliminatoria específica.
-2.  **Filtrar por posición:** Lista todos los jugadores de una posición determinada (arquero, defensa, etc.) a lo largo de las 10 eliminatorias.
-3.  **Ver clasificaciones:** Indica si Chile clasificó o no al Mundial en cada uno de los procesos.
-4.  **Ver puntuaciones:** Muestra los puntos obtenidos por la selección en la tabla de posiciones final.
+* **Programación Orientada a Objetos:** El proyecto está estructurado en clases (`Jugador`, `Eliminatoria`, `Historial`) que modelan las entidades del mundo real y encapsulan la lógica de negocio.
+* **Gestión de Archivos:** Se ha añadido la capacidad de escribir archivos `.txt` para exportar las alineaciones de los equipos, demostrando el manejo de archivos.
+* **Modularidad:** El código está organizado en tres archivos (`entidades.py`, `historial.py`, `main.py`), cada uno con una responsabilidad específica.
+* **Manejo de Excepciones:** Se utiliza `try-except` para un control robusto de las entradas del usuario y de posibles errores al escribir archivos.
 
-## Cómo Ejecutar el Programa
-1.  Asegúrate de tener Python instalado en tu sistema.
-2.  Clona este repositorio en tu máquina local.
-3.  Abre una terminal y navega hasta la carpeta del proyecto.
-4.  Ejecuta el siguiente comando:
+## Estructura del Código 📂
+
+* **`datos_eliminatorias.py`:** Contiene los datos brutos de las eliminatorias.
+* **`entidades.py`:** Define las clases `Jugador` y `Eliminatoria`, que son los "moldes" para nuestros datos.
+* **`historial.py`:** Contiene la clase `Historial`, que actúa como el motor del programa, cargando los datos y manejando toda la lógica.
+* **`main.py`:** Es el punto de entrada que muestra el menú y se comunica con el objeto `Historial`.
+
+## Cómo Ejecutar ▶️
+
+1.  Asegúrate de tener todos los archivos en la misma carpeta.
+2.  Ejecuta el archivo principal desde la terminal:
     ```bash
-    python proyecto_seleccion.py
+    python main.py
     ```
-5.  Sigue las instrucciones que aparecen en el menú de la consola.
+3.  Sigue las instrucciones del menú. Al usar la opción de exportar, se creará un archivo `.txt` en la misma carpeta.
