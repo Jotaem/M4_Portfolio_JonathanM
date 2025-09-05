@@ -1,6 +1,6 @@
 # biblioteca.py
 
-from datos import datos_autores, datos_libros
+from datos_biblia import datos_autores, datos_libros
 from entidades import Autor, Libro
 
 class Biblioteca:

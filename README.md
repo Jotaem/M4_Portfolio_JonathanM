@@ -1,21 +1,34 @@
-# Portafolio Módulo 3: Proyectos en Python 🐍
-Este repositorio reúne tres mini-programas de consola desarrollados en Python. Cada uno está diseñado para aplicar y demostrar conceptos fundamentales de programación de una manera práctica e interactiva.
+# Portafolio Módulo 4: Proyectos Avanzados en Python 🐍
 
+Este repositorio contiene la evolución de tres proyectos de consola desarrollados en Python, refactorizados para aplicar y demostrar conceptos de programación avanzada.
+Cada programa ha sido reestructurado utilizando **Programación Orientada a Objetos (POO)**, se ha añadido **gestión de archivos** para la persistencia de datos y se ha mejorado la **modularidad** y el **manejo de errores**, llevando las aplicaciones a un nivel superior de calidad y diseño.
+
+## Conceptos Avanzados Aplicados
+
+Este portafolio demuestra el dominio de los siguientes conceptos clave:
+
+* **Programación Orientada a Objetos (POO):** Uso de Clases, Objetos, Atributos, Métodos y Composición para un diseño de software escalable.
+* **Persistencia de Datos:** Capacidad de leer y escribir en archivos externos (`.csv`, `.txt`) para que la información no se pierda.
+* **Modularidad y Código Escalable:** Separación del código en distintos archivos (`entidades`, `lógica`, `main`), cada uno con una responsabilidad única.
+* **Manejo de Excepciones:** Uso de `try-except` para un control robusto de errores, como entradas de usuario inválidas o problemas con archivos.
+
+---
 ## Proyectos Incluidos
-## 1. Estadísticas de la Selección Chilena ⚽
-Un script para consultar datos históricos de la selección chilena en las eliminatorias mundialistas. Permite filtrar por equipo, posición, clasificaciones y puntajes.
 
-- Ejecutar con: python proyecto_seleccion.py
+### 1. Agenda de Contactos (Avanzada) 📞
+Una aplicación de agenda que ahora **guarda los datos de forma persistente en un archivo CSV**. El código está completamente reescrito con clases como `Contacto` y `Agenda`.
 
-## 2. Explorador de la Biblia 📖
-Una herramienta para explorar y ordenar los libros de la Biblia según diferentes criterios como cronología o autor. El proyecto destaca por separar los datos de la lógica del programa para una mejor organización.
+* **Ubicación:** Carpeta `Agenda de Contactos/`
+* **Ejecutar con:** `python main.py`
 
-- Ejecutar con: python explorador_biblia.py
+### 2. Estadísticas de la Selección Chilena (Avanzada) ⚽
+Un explorador de datos históricos de la selección, ahora modelado con clases como `Jugador` y `Eliminatoria`. Incluye una nueva función para **exportar alineaciones a archivos `.txt`**.
 
-## 3. Agenda de Contactos en Consola 📞
-Una aplicación simple que simula una agenda para gestionar contactos, permitiendo agregar, buscar, eliminar y listar entradas a través de la terminal.
+* **Ubicación:** Carpeta `Equipos de la Selección Chilena/`
+* **Ejecutar con:** `python main.py`
 
-- Ejecutar con: python main.py
+### 3. Explorador de la Biblia (Avanzado) 📖
+Una herramienta de exploración bíblica enriquecida con perfiles de autor, biografías y citas clave. El sistema está basado en clases como `Libro`, `Autor` y `Biblioteca`, y permite **exportar perfiles de autor a archivos `.txt`**.
 
-## Conceptos Aplicados
-Todos los proyectos se construyeron utilizando una base común de conceptos de Python, incluyendo variables, estructuras de datos (diccionarios y listas), condicionales (if/else), bucles (for/while) y funciones para modularizar el código.
+* **Ubicación:** Carpeta `Explorador de la Biblia/`
+* **Ejecutar con:** `python main.py`
